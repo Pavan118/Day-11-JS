@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var container=document.createElement("header")
+        var title=document.createElement("h1")
+        var mail=document.createElement("p")
+        var phone=document.createElement("p")
+        var body=document.querySelector("body")
+        title.innerHTML="<b>NEELA PAVANSAI</b>";
+        title.style.color="blue";
+        mail.innerHTML="<b>Mail:</b>pavansaineela2003@gmail.com";
+        phone.innerHTML="<b>Mobile:</b>9390751873";
+        console.log(container)
+        container.append(title,mail,phone);
+        body.append(container)
+        container.style.textAlign="center";
+        body.style.border="2px solid black";
+        body.style.padding="1%";
+        var container1=document.createElement("main")
+        var title1=document.createElement("h3")
+        var career=document.createElement("p")
+        title1.innerText="CAREER OBJECTIVE";
+        career.innerText="To secure a challenging position in a reputable organization where I can utilize my skills in communication,problem-solving and grow both personally and professionally. Eager to contribute to the success of the team and enhance my skills with the organization's growth.";
+        title1.style.textAlign="center";
+        title1.style.color="white";
+        title1.style.background="grey";
+        career.style.fontStyle="italic";
+        container1.append(title1,career)
+        var title2=document.createElement("h3")
+        var edu=document.createElement("p")
+        var edu1=document.createElement("p")
+        title2.innerText="EDUCATION";
+        edu.innerHTML="<ul><li>B.Tech in Computer Science and Engineering <br> <b>ANURAG UNIVERSITY(2022-2025)</b></ul></li>";
+        edu1.innerHTML="<ul><li>Diploma in Mechanical Engineering <br> <b>TKR COLLEGE OF ENGINEERING AND TECHNOLOGY(2019-2022)</b></ul></li>";
+        title2.style.textAlign="center";
+        title2.style.color="white";
+        title2.style.background="grey";
+        edu.style.color="lightsalmon";
+        edu1.style.color="lightsalmon";
+        container1.append(title2,edu,edu1)
+        var title3=document.createElement("h3")
+        var skills=document.createElement("p")
+        title3.innerText="TECHNICAL SKILLS";
+        skills.innerHTML="<ul><li><b>Frontend Technologies:</b> HTML,CSS,Java Script</li><li><b>Backend Technologies:</b>Python,Java</li><li><b>Frameworks:</b>Bootstrap</li><li><b>Database:</b>SQL</li><li><b>Tools:</b>Git,GitHub,Visual Studio</li>"
+        title3.style.textAlign="center";
+        title3.style.background="grey";
+        title3.style.color="white";
+        skills.style.color="crimson";
+        container1.append(title3,skills)
+        var title4=document.createElement("h3")
+        var soft=document.createElement("p")
+        title4.innerText="SOFT SKILLS";
+        soft.innerHTML="<ul><li>Active Listening</li><li>Problem-solving</li><li>Communication Skills</li><li>Self Motivator</li><li>Time Management</li>"
+        title4.style.textAlign="center";
+        title4.style.background="grey";
+        title4.style.color="white";
+        soft.style.color="red";
+        container1.append(title4,soft)
+        var title5=document.createElement("h3")
+        var project=document.createElement("h4")
+        var pro=document.createElement("p")
+        var project1=document.createElement("h4")
+        var pro1=document.createElement("p")
+        title5.innerText="PROJECTS";
+        project.innerText="Blockchain Based E-Voting System";
+        pro.innerHTML="<ul><li>This project is developed using HTML and CSS for the structure and styling of the web application.</li><li>Developed a secure, transparent,and decentralized blockchain-based voting system using smart contracts.</li></ul>";
+        project1.innerText="Super Market Billing System";
+        pro1.innerHTML="<ul><li>Java servlets designed to automate and simplify the billing process at supermarkets. </li><li>This system allows users to generate accurate bills quickly and efficiently while managing inventory and sales data seamlessly.</li></ul>";
+        title5.style.textAlign="center";
+        title5.style.background="grey";
+        title5.style.color="white";
+        pro.style.fontStyle="italic";
+        pro1.style.fontStyle="italic";
+        container1.append(title5,project,pro,project1,pro1)
+        console.log(container1)
+        body.append(container1)
+        
+    </script>
+</body>
+</html>
